@@ -1,6 +1,4 @@
-# WTX_NODEJS_API
-ITX API for NodeJS
-
+##ITX API for NodeJS
 
 This folder contains the following Nodejs wrapper modules for the WTX API:
 	-general.js (General Functions)
