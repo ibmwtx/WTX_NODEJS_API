@@ -4,7 +4,7 @@
 	var gl = require('./dtxdefs.js');
 	
 	
-	var general = ffi.Library('dtxpi', {
+	var general = ffi.Library('dtxpi64', {
 	"mpiInitAPI" : [ global.MPIRC, [ "string" ] ],
 	"mpiTermAPI" : [ 'int', [ ] ],
 	"mpiErrorGetText" : [ "string", [ global.MPIRC ]]
