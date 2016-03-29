@@ -5,7 +5,7 @@
 	var gl = require('./dtxdefs.js');
 
 
-  var properties = ffi.Library('dtxpi', {
+  var properties = ffi.Library('dtxpi64', {
 	"mpiPropertySetInteger" : [global.MPIRC, [global.HMPIOBJ	, global.MPIPROP, "int", "int"] ],	
 	"mpiPropertySetText" : [ global.MPIRC, [global.HMPIOBJ, global.MPIPROP, "int", "string", "int"] ],
 	"mpiPropertyGetInteger" : [ global.MPIRC, [ global.HMPIOBJ, global.MPIPROP, "int", global.intptr ] ],
