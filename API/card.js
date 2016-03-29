@@ -6,7 +6,7 @@
 	var gl = require('./dtxdefs.js');
 
 
-  var card = ffi.Library('dtxpi', {
+  var card = ffi.Library('dtxpi64', {
 	"mpiCardGetAdapterObject" : [global.MPIRC, [global.HMPICARD	, global.HMPIADAPT] ],	
 	"mpiCardGetMapObject" : [ global.MPIRC, [global.HMPICARD, global.HMPIMAP] ],
 	"mpiCardGetAdapterType" : [ global.MPIRC, [ global.HMPICARD, global.intptr ] ] ,
