@@ -3,7 +3,7 @@
 	var ffi = require('ffi');
 	var gl = require('./dtxdefs.js');
  
-	var stream  = ffi.Library('dtxpi', {
+	var stream  = ffi.Library('dtxpi64', {
 	"mpiStreamPageGetInfo" : [global.MPIRC, [global.HMPISTREAMPAGE	, global.stringptr, global.intptr] ],	
 	"mpiStreamCreate" : [ global.MPIRC, [global.HMPISTREAM, "int", "string", "string", "int"] ],
 	"mpiStreamDestroy" : [ global.MPIRC, [ global.HMPISTREAM ] ] ,
