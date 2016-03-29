@@ -3,7 +3,7 @@
 	var ffi = require('ffi');
 	var gl = require('./dtxdefs.js');
 
-  var adapter = ffi.Library('dtxpi', {
+  var adapter = ffi.Library('dtxpi64', {
 	"mpiAdaptGetCardObject" : [global.MPIRC, [global.HMPIADAPT	, global.HMPICARD] ],	
 	"mpiAdaptGetInputStreamObject" : [ global.MPIRC, [global.HMPIADAPT, global.HMPISTREAM] ],
 	"mpiAdaptGetOutputStreamObject" : [ global.MPIRC, [ global.HMPIADAPT, global.HMPISTREAM ] ] 	
