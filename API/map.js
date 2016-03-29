@@ -5,7 +5,7 @@
 	var gl = require('./dtxdefs.js');
 
 
-  var map = ffi.Library('dtxpi', {
+  var map = ffi.Library('dtxpi64', {
 	"mpiMapLoadFile" : [global.MPIRC, [global.HMPIMAP	, "string"] ],	
 	"mpiMapUnload" : [ global.MPIRC, [global.HMPIMAP] ],
 	"mpiMapRun" : [ global.MPIRC, [ global.HMPIMAP ] ] ,
